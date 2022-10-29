@@ -1,0 +1,17 @@
+This script was made to assisnt in my job search by aggregating common phrases in job postings on Indeed
+
+Usage:
+
+Go to Indeed and search for job postings. Include any filters like location or level.
+
+Copy the URL from your browser and enter it as value for lastUrl on line 15 of the script.
+
+Set a breakpoint at each line where it says "print('breakpoint')" as CloudFlare will ask to verify you are human
+
+If the program exits due to an exception before it gets as far as you like, take note of the URL it prints to console. Use this as the lastUrl value for the next run so it picks up where it left off. Perhaps consider changing the "start" query parameter by adding 10 to skip that page.
+
+Once finished, it should have all of your keywords in "keyword output.txt"
+
+You will need to go over the output file manually to remove noise as there will be a lot of phrases like "Full Benefits" or "Preferred Qualifications"
+
+I've included sample copies of the outputs as well as what mine final result looked like after going over it manually.
